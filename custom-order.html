@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ICON CSS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Whiff and Glow</title>
+</head>
+<body>
+
+
+    <div class="main-container">
+        <div class="navbar">
+            <nav>
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <img src="assets/logo's/simple-ai-high-res.svg">
+                </div>
+                <ul class="list">
+                    <li><a href="index.html">All Products</a></li>
+                    <li><a href="pre-order.html">Pre-order</a></li>
+                    <!-- <li><a href="exclusive-products.html">Exclusive</a></li> -->
+                    <button class="btn" onclick="window.location.href='custom-order.html'">Customize</button>
+                </ul>
+                <ul class="menu-icon">
+                    <i class="ph-bold ph-list"></i>
+                </ul>
+                <ul class="mobile-list">
+                    <i class="ph-bold ph-x"></i>
+                    <li><a href="index.html">All Products</a></li>
+                    <li><a href="pre-order.html">Pre-order</a></li>
+                    <li><a href="exclusive-products.html">Exclusive</a></li>
+                    <button class="btn" onclick="window.location.href='custom-order.html'">Customize</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="order-sec">
+            <div class="main-heading">
+                <h1>Custom Order Request</h1>
+            </div>
+            <div class="sub-heading">
+                <p>Fill out the form below to tell us about your custom order needs.</p>
+            </div>
+            <form name="custom-order-to-google-sheet">
+                <div class="row one">
+                    <label for="f-name">
+                        <p>First Name</p>
+                        <input type="text" name="firstName" id="firstname">
+                    </label>
+                    <label for="l-name">
+                        <p>Last Name</p>
+                        <input type="text" name="lastName" id="lastname">
+                    </label>
+                </div>
+                <div class="row two">
+                    <label for="phone-number">
+                        <p>Phone Number</p>
+                        <input type="tel" name="phoneNumber" id="phonenumber">
+                    </label>
+                    <label for="email">
+                        <p>Email</p>
+                        <input type="email" name="email" id="email">
+                    </label>
+                </div>
+                <div class="row three">
+                    <label for="requirements">
+                        <p>Custom Order Requirements</p>
+                        <textarea cols="30" rows="10" placeholder="Type in your requirements here..." name="orderReq" id="orderreq"></textarea>
+                    </label>
+                </div>
+                <div class="send-btn">
+                    <button class="btn custom-order" type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer custom-order">
+            <div class="wrapper">
+                <div class="row one">
+                    <div class="col one">
+                        <div class="heading">
+                            <h4>Useful links</h4>
+                        </div>
+                        <ul class="listings">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="shipping-policy.html">Shipping policy</a></li>
+                            <li><a href="terms-and-conditions.html">Terms & conditions</a></li>
+                            <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col two">
+                        <div class="heading">
+                            <h4>Social Media</h4>
+                        </div>
+                        <ul class="listings">
+                            <a href="https://www.instagram.com/whiffandglow.candles/"><p>Instagram <i class="ph-bold ph-arrow-up-right"></i></p></a>
+                            <a href="https://www.tiktok.com/@whiffandglow.candles"><p>Tiktok <i class="ph-bold ph-arrow-up-right"></i></p></a>
+                        </ul>
+                    </div>
+                    <div class="col three">
+                        <div class="heading">
+                            <h4>Subscribe to our emails</h4>
+                        </div>
+                        <form name="newsletter-us-sheets">
+                            <label>
+                                <div class="input-sec">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="subscribe-btn">
+                                    <button type="submit" class="btn">Subscribe <i class="ph-bold ph-arrow-right"></i></button>
+                                </div>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="region-sec">
+            <div class="wrapper">
+                <div class="row one">
+                    <div class="col one">
+                        <div class="heading">
+                            <h4>Country/Region</h4>
+                        </div>
+                        <select name="country-region">
+                            <option value="value">LKR | Sri Lanka</option>
+                        </select>
+                        <i class="ph-bold ph-caret-down"></i>
+                    </div>
+                    <div class="col two">
+                        <div class="payments">
+                            <img src="assets/visa.png">
+                            <img src="assets/mastercard.png">
+                            <img src="assets/american-express.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row two">
+                    <p>© 2023, built by Vickrant Selvendran.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/custom-order.js"></script>
+    
+</body>
+</html>
